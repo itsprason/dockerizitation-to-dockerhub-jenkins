@@ -6,13 +6,6 @@ environment {
     }
     stages{
 
-        stage("GIT SCM"){
-            steps{
-                git branch: 'main', url: 'https://github.com/itsprason/dockerizitation-to-dockerhub-jenkins'
-                sh "ls"
-            }
-        }
-
         stage("Test Code"){
             steps{
                 echo "==============Executing Test Code==========="
